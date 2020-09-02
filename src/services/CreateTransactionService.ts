@@ -5,7 +5,7 @@ import Transaction from '../models/Transaction';
 interface Request {
   title: string;
   value: number;
-  type: string;
+  type: 'income' | 'outcome';
 }
 
 class CreateTransactionService {
